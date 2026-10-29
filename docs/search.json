@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "demos/demo.html",
+    "href": "demos/demo.html",
+    "title": "Interactive Graphics with Plotly (Python)",
+    "section": "",
+    "text": "Download this Jupyter notebook:\nClick here to download the .ipynb file\n(Or use the “Download” button in the top right of the page if available.)"
+  },
+  {
+    "objectID": "demos/demo.html#what-is-plotly",
+    "href": "demos/demo.html#what-is-plotly",
+    "title": "Interactive Graphics with Plotly (Python)",
+    "section": "What is Plotly?",
+    "text": "What is Plotly?\n\nAn open-source library for interactive charts, built on the JavaScript library plotly.js\nThe same engine powers Plotly for Python, R, and Julia, so the charts look and behave the same everywhere\nEvery figure is a small web page: hover, zoom, pan, and download come for free\nFigures render inside notebooks, Quarto documents, and standalone HTML files\nTwo Python interfaces:\n\nplotly.express (px): one function call per chart, works directly on data frames\nplotly.graph_objects (go): build a figure trace by trace for full control\n\nInstall with conda install plotly or pip install plotly"
+  },
+  {
+    "objectID": "demos/demo.html#the-gapminder-data",
+    "href": "demos/demo.html#the-gapminder-data",
+    "title": "Interactive Graphics with Plotly (Python)",
+    "section": "The Gapminder data",
+    "text": "The Gapminder data\n\nLife expectancy, population, and GDP per capita for 142 countries\nMeasured every 5 years from 1952 to 2007 (1,704 rows)\nColumns: country, continent, year, lifeExp, pop, gdpPercap\nShips with Plotly as px.data.gapminder(), which also includes ISO country codes for maps\n\n\n\nCode\nimport plotly.io as pio\npio.renderers.default = \"plotly_mimetype+notebook_connected\"\n\n\n\n\nCode\nimport plotly.express as px\n\ndf = px.data.gapminder()\n\nprint(df.shape)\ndf.head()\n\n\n(1704, 8)\n\n\n\n\n\n\n\n\n\ncountry\ncontinent\nyear\nlifeExp\npop\ngdpPercap\niso_alpha\niso_num\n\n\n\n\n0\nAfghanistan\nAsia\n1952\n28.801\n8425333\n779.445314\nAFG\n4\n\n\n1\nAfghanistan\nAsia\n1957\n30.332\n9240934\n820.853030\nAFG\n4\n\n\n2\nAfghanistan\nAsia\n1962\n31.997\n10267083\n853.100710\nAFG\n4\n\n\n3\nAfghanistan\nAsia\n1967\n34.020\n11537966\n836.197138\nAFG\n4\n\n\n4\nAfghanistan\nAsia\n1972\n36.088\n13079460\n739.981106\nAFG\n4"
+  },
+  {
+    "objectID": "demos/demo.html#your-first-interactive-plot",
+    "href": "demos/demo.html#your-first-interactive-plot",
+    "title": "Interactive Graphics with Plotly (Python)",
+    "section": "Your first interactive plot",
+    "text": "Your first interactive plot\n\nOne call maps data columns to the x and y axes\nTry the built-in interactions:\n\nHover over a point to see its values\nDrag to zoom into a region; double-click to reset\nUse the toolbar (top right) to pan, zoom, or save a PNG"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-test-project",
+    "section": "",
+    "text": "This is a Quarto website!!!!\n\\(p\\left(s_{t+1} \\mid s_t, s_{t-1}, s_{t-2}, \\ldots, s_0\\right)=p\\left(s_{t+1} \\mid s_t\\right)\\)\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\\(p\\left(s_{t+1} \\mid s_t, s_{t-1}, s_{t-2}, \\ldots, s_0\\right)=p\\left(s_{t+1} \\mid s_t\\right)\\) \\(p\\left(s_{t+1} \\mid s_t, s_{t-1}, s_{t-2}, \\ldots, s_0\\right)=p\\left(s_{t+1} \\mid s_t\\right)\\)\nfun\n\\(p\\left(s_{t+1} \\mid s_t, s_{t-1}, s_{t-2}, \\ldots, s_0\\right)=p\\left(s_{t+1} \\mid s_t\\right)\\)"
+  }
+]
